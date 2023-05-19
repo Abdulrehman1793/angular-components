@@ -1,0 +1,81 @@
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+.content {
+  margin: 0 50px 0 50px;
+  padding: 20px 30px;
+  background: #e0dfdf;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+
+  h2 {
+    font-weight: 600;
+  }
+
+  small {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #e0dfdf;
+    right: -15px;
+  }
+
+  .right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #e0dfdf;
+    left: -15px;
+  }
+}
+.left-container {
+  left: 0;
+}
+.right-container {
+  left: 50%;
+}
+.container img {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #e0dfdf;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+}
+.right-container img {
+  left: -20px;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  border: 1px solid #e0dfdf;
+  top: 0;
+  left: 50%;
+  margin-left: -2px;
+  z-index: -1;
+}
