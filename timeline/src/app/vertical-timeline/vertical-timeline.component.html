@@ -1,6 +1,6 @@
 <div class="timeline">
-  <div *ngFor="let item of items; let i = index" class="container"
-    [ngClass]="i%2==0?'left-container':'right-container'">
+  <div *ngFor="let item of items; let i = index" class="container" [ngClass]="i%2==0?'left-container':'right-container'"
+    [ngStyle]="{'animation-delay': i + 's'}">
     <img [src]="item.imageUrl" />
     <div class="content">
       <h2>{{item.title}}</h2>
