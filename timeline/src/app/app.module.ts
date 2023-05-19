@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ProgressTimelineComponent } from './progress-timeline/progress-timeline.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProgressTimelineComponent
   ],
   imports: [
     BrowserModule,
