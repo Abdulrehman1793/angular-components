@@ -1,5 +1,5 @@
-<div class="timeline">
-  <div *ngFor="let item of items" class="timeline-event">
+<div class="timeline" [@listAnimation]="items.length">
+  <div *ngFor="let item of items; let i = index" class="timeline-event">
     <div class="timeline-point-track-container">
       <div class="timeline-point" [ngClass]="item?.status === 'R' ? 'highlight' : ''"></div>
       <div class="timeline-track" [ngClass]="item?.status === 'R' ? 'highlight' : ''"></div>
