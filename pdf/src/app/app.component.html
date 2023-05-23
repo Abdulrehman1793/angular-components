@@ -1,0 +1,16 @@
+<header>
+  <nav>
+    <ul>
+      <li>
+        <a [routerLink]="['pdf-viewer']" [routerLinkActive]="'active'">Pdf Viewer</a>
+      </li>
+      <li>
+        <a [routerLink]="['custom-pdf-viewer']" [routerLinkActive]="'active'">Custom Pdf Viewer</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<div style="margin-top: 1rem;">
+  <router-outlet></router-outlet>
+</div>

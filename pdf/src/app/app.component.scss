@@ -1,0 +1,33 @@
+/* CSS for the navbar */
+header {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: #e2dddd;
+  justify-content: center; /* Horizontally center the content */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Horizontally center the list items */
+}
+
+li {
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+a:hover,
+.active {
+  background-color: #ffc4c4;
+}
