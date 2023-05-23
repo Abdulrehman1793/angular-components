@@ -1,1 +1,7 @@
-<p>pdf-viewer works!</p>
+<div class="viewer-header">
+  <input type="file" (change)="onFileSelected($event)" />
+</div>
+
+<div class="viewer-body">
+  <ngx-extended-pdf-viewer [src]="selectedFile" [useBrowserLocale]="true"></ngx-extended-pdf-viewer>
+</div>
